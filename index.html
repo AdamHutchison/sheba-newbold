@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sheba Newbold - Author of the Soul Bound Trilogy. Fantasy novels weaving grit, myth, and passion across mortal and Fae realms.">
+    <meta name="author" content="Sheba Newbold">
+    <title>Sheba Newbold | Fantasy Author</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --forest-green: #2d5a47;
+            --cream: #f5f1e8;
+            --gold: #b8976a;
+            --dark-brown: #3d3630;
+            --light-green: #4a7c67;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: var(--cream);
+            color: var(--dark-brown);
+            line-height: 1.7;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--forest-green);
+            color: var(--cream);
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/vine-pattern.webp');
+            background-repeat: repeat;
+            background-position: center;
+            background-size: 300px;
+            opacity: 0.08;
+            mix-blend-mode: overlay;
+            filter: invert(1);
+            pointer-events: none;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            position: relative;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        @media (min-width: 800px) {
+            main {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        /* About section */
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        @media (min-width: 600px) {
+            .about {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        /* Author photo */
+        .author-photo {
+            width: 220px;
+            height: auto;
+            border: 3px solid var(--gold);
+            flex-shrink: 0;
+        }
+
+        .bio {
+            flex: 1;
+        }
+
+        .bio h2 {
+            color: var(--forest-green);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .bio p {
+            margin-bottom: 1rem;
+        }
+
+        /* Books sidebar */
+        .books {
+            background-color: rgba(45, 90, 71, 0.08);
+            padding: 1.5rem;
+            border-left: 3px solid var(--gold);
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 800px) {
+            .books {
+                width: 220px;
+                position: sticky;
+                top: 2rem;
+            }
+        }
+
+        .books h2 {
+            color: var(--forest-green);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+        }
+
+        /* Book cover */
+        .book-cover {
+            width: 160px;
+            height: auto;
+            border: 2px solid var(--gold);
+            margin: 0 auto 1rem;
+        }
+
+        .books h3 {
+            color: var(--dark-brown);
+            font-size: 0.95rem;
+            font-weight: normal;
+            margin-bottom: 0.75rem;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: var(--forest-green);
+            color: var(--cream);
+            text-decoration: none;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: var(--light-green);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--forest-green);
+            color: var(--cream);
+            text-align: center;
+            padding: 2rem 1.5rem;
+            font-size: 0.9rem;
+            margin-top: auto;
+            border-top: 3px solid var(--gold);
+        }
+
+        footer p {
+            opacity: 0.9;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sheba Newbold</h1>
+        <p>Author of the Soul Bound Trilogy</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <img src="images/sheba-newbold.jpg" alt="Sheba Newbold" class="author-photo">
+
+            <div class="bio">
+                <h2>About the Author</h2>
+                <p>Sheba Newbold grew up in a small farming community in the English Midlands. Raised among fields, seasons, and old ways of living, she developed a deep love of nature, folklore, and the cycles that shape rural life.</p>
+                <p>She has spent much of her life caring as a nurse, a mother, and a grandmother, but has always been drawn to the quieter magic of storytelling. Her work is influenced by history, folk tradition and a strong affinity for nature-based spirituality, particularly the forgotten lives and resilience of women who lived in times when belief itself could be dangerous.</p>
+                <p>She has written all her life—poetry, songs, and short fiction—but it is only now that these strands have come together in her novels. Her stories blend grit, myth and passion. The ordinary and the otherworldly, exploring love, power, and survival across mortal and Fae realms.</p>
+                <p>Sheba is currently writing her second book in the Soul Bound trilogy, <em>A Jackdaw's Oath</em>, which will be published in March.</p>
+            </div>
+        </section>
+
+        <aside class="books">
+            <h2>Books</h2>
+            <img src="images/a-thousand-butterflies.jpg" alt="A Thousand Butterflies" class="book-cover">
+            <h3>A Thousand Butterflies</h3>
+            <a href="https://www.amazon.co.uk/Thousand-Butterflies-Sheba-Newbold-ebook/dp/B0FNRZWNY9" class="buy-button" target="_blank" rel="noopener">Buy Now</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sheba Newbold. All rights reserved.</p>
+    </footer>
+</body>
+</html>
